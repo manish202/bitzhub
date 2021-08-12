@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to bitzhub e-commerce clothing site...</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">bitz<span>hub</span></a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="all-products.html">products</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="account.html">account</a></li>
+            </ul>
+            <a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+        </nav>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </header>
+    <section class="section-6">
+        <table>
+            <thead>
+                <tr>
+                    <th>product</th>
+                    <th>quantity</th>
+                    <th>subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="load-cart">
+                <tr>
+                    <td>
+                        <img src="images/tshirt-2.png" alt="">
+                        <div class="desc">
+                            <h3>red printed t-shirt</h3>
+                            <h4>price : $45.00</h4>
+                            <a href="#" class="btn btn-sm">remove</a>
+                        </div>
+                    </td>
+                    <td><input class="qty" type="number" min="1" max="10" value="1"></td>
+                    <td><b>$45.00</b></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/tshirt-2.png" alt="">
+                        <div class="desc">
+                            <h3>red printed t-shirt</h3>
+                            <h4>price : $45.00</h4>
+                            <a href="#" class="btn btn-sm">remove</a>
+                        </div>
+                    </td>
+                    <td><input class="qty" type="number" min="1" max="10" value="1"></td>
+                    <td><b>$45.00</b></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td><b>subtotal</b></td>
+                    <td><b>$200.00</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><b>tax</b></td>
+                    <td><b>$20.00</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><b>total</b></td>
+                    <td><b>$220.00</b></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><a href="" class="btn btn-sm">proceed to checkout</a></td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- <div class="total">
+
+        </div> -->
+    </section>
+    <footer>
+        <div class="logo">
+            <h1><a href="index.html">bitz<span>hub</span></a></h1>
+        </div>
+        <nav class="social">
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </nav>
+    </footer>
+    <script>
+        let toggle = document.querySelector(".fa-bars");
+        let ul = document.querySelector("header nav ul");
+        toggle.onclick = () => {
+            ul.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to bitzhub e-commerce clothing site...</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">bitz<span>hub</span></a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="all-products.html">products</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="account.html">account</a></li>
+            </ul>
+            <a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+        </nav>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </header>
+    <section class="section-1">
+        <div class="box-2">
+            <img src="images/meditation.png" alt="">
+        </div>
+        <div class="box-1">
+            <div class="form-box">
+                <div class="tabs">
+                    <span></span>
+                    <button class="btn-1">login</button>
+                    <button class="btn-2">register</button>
+                </div>
+                <div class="flex-form">
+                    <form action="" id="login-form">
+                        <input type="text" class="username" placeholder="username">
+                        <input type="password" class="password" placeholder="password">
+                        <button type="submit" class="btn btn-sm">login</button>
+                        <a href="#">forget password</a>
+                    </form>
+                    <form action="" id="register-form">
+                        <input type="text" class="username" placeholder="username">
+                        <input type="email" class="email" placeholder="email">
+                        <input type="password" class="password" placeholder="password">
+                        <button type="submit" class="btn btn-sm">register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="logo">
+            <h1><a href="index.html">bitz<span>hub</span></a></h1>
+        </div>
+        <nav class="social">
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </nav>
+    </footer>
+    <script>
+        let toggle = document.querySelector(".fa-bars");
+        let ul = document.querySelector("header nav ul");
+        toggle.onclick = () => {
+            ul.classList.toggle("active");
+        }
+
+        let btn_1 = document.querySelector(".btn-1");
+        let btn_2 = document.querySelector(".btn-2");
+        let form_1 = document.getElementById("login-form");
+        let form_2 = document.getElementById("register-form");
+        let span = document.querySelector(".tabs span");
+        btn_1.onclick = () => {
+            span.style.left = btn_1.offsetLeft + "px";
+            form_1.style.left = "0%";
+            form_2.style.left = "100%";
+        }
+        btn_2.onclick = () => {
+            span.style.left = btn_2.offsetLeft + "px";
+            form_1.style.left = "-100%";
+            form_2.style.left = "0%";
+        }
+    </script>
+</body>
+</html>
